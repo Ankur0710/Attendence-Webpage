@@ -1,0 +1,33 @@
+.MENU ul li {
+    list-style: none;
+    display: inline-block;
+    margin: 0px 15px;
+}
+
+.MENU ul li a {
+    font-size: 17px;
+    text-decoration: none;
+    transition: 0.3 all;
+}
+
+.MENU ul li a:hover {
+    color: black;
+}
+
+.hover-line::after {
+    content: "";
+    display: block;
+    width: 0%;
+    height: 3px;
+    background-color: #a26bff;
+    transform: width 0.3s;
+}
+
+.hover-line:hover:after {
+    width: 100%;
+    transition: width 0.4s;
+}
+
+.cursor{
+    cursor: pointer;
+}
